@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header style="display: flex; justify-content: space-between; padding: 1em">
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div
+          style="
+            border-radius: 9999px;
+            background: #eaeaea;
+            height: 32px;
+            width: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1em;
+          "
+        >
+          DT
+        </div>
+        <div style="font-size: small">
+          <p>Diep Tran</p>
+          <p>Data Scientist</p>
+        </div>
+      </div>
+
+      <div>
+        <button>Notification</button>
+        <button>Setting</button>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item active" data-path="dashboard">Dashboard</li>
+        <li class="nav__item" data-path="model">Model</li>
+        <li class="nav__item" data-path="dataset">Dataset</li>
+      </ul>
+    </nav>
+
+    <div class="content"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

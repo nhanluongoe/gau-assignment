@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button:hover {
+  background-color: #d6e0f7;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: #d6e0f7;
+  margin-bottom: 1em;
+}
+
+.nav .nav__items {
+  display: flex;
+  gap: 1em;
+}
+
+.nav .nav__item.active {
+  color: #646cff;
+}
+
+.content {
+  padding: 1em 2em;
+}
+
+.content__dashboard__dataset table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content__dashboard__dataset table th,
+.content__dashboard__dataset table td {
+  padding: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.content__dashboard__dataset table th {
+  text-align: left;
+  font-weight: 500;
+  background-color: #edeaea;
+}
+
+.dashboard__dataset__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.content__dashboard__charts {
+  display: flex;
+}
+
+.content__dashboard__charts .chart {
+  flex: 1;
+  padding: 1em;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  flex-basis: 0;
+}
+
+.content__dashboard__cluster__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.cluster__header__version {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+
+.content__dataset {
+  display: flex;
+  width: 100%;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.content__dataset__filters {
+  width: 30%;
+}
+
+.content__dataset__filters > * {
+  margin-bottom: 1em;
+}
+
+.pipeline-sample {
+  flex-grow: 1;
+}
+
+.dataset__filter label {
+  display: inline-block;
+  width: 120px;
+}
+
+.dataset__filter input[type="text"] {
+  padding: 0.5em;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  width: 30%;
+}
+
+.dataset__filter select {
+  width: 30%;
+  padding: 0.5em;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
